@@ -1,11 +1,11 @@
 This game is rated E for everyone
 
-When you open the file, a prompt will ask you "How many games the Mariners will win in the upcoming year"
+In "Guess that hobbit!" you will be greeted with a promp "Who is the fattest of the hobbitses"
 
-In the blank input space, enter your prediction of how many games the Mariners will win in the upcoming season. 
+In the prompt, enter the full name of the hobbit who best fits the question.
 
-*Note that there are only 162 games in a season.
+If you do not get the correct answer, you will be prompted again until you get the correct answer.
 
-Based off of your response, there will be an alert which will either tell you that you are correct, your response is too high or if your response is too low.
+Potential responses include Peregrin Took, Frodo Baggins, Samwise Gamgee,Meriadoc Brandybuck and Bilbo Baggins. 
 
-Enjoy!
+Best of luck!!!!!!

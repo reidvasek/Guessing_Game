@@ -3,26 +3,38 @@
 <head>
 	<title> Guessing Game</title>
 </head>
-<h1> Welcome to Reid's Guessing game</h1>
+<h2> You've chosen to play</h2>
+<h1> Name that Hobbit! <h1>
+<h3> In the ensuing prompt, enter the full name of the hobbit who best fits the question</h3>
 
 <script>
 (function() {
 
-	var answer="93";
+	var answer = "Samwise Gamgee";
 
-	var guess= prompt("How many games will the Mariners win this year")
-	guess= Number.parseInt(guess);
+	var guess = prompt("Who is the fattest of the hobbitses")
+	
 
 	while (true) {
-		 if (guess==answer){
-		 	alert('You got it!!!! U= jean yus!');
+		 if (guess === answer){
+		 	alert('You\'ve done well');
 		 	break;
-		 } else if (guess > answer){
-		 	guess = Number.parseInt (prompt('Too high, guess again'));
-		 }	else if (guess < answer){
-		 	guess = Number.parseInt	(prompt('Too low, guess again'));
+		 } 
+		 else if (guess === "Peregrin Took" ){
+		 	guess=prompt('Pippin needs to smoke less pipe tabacco and eat more lambas bread. Guess again!');
+		 }	
+		 else if (guess === "Frodo Baggins"){
+		 	guess=prompt('The precious, the precious! Guess again!');
 		 	}
 
+		else if (guess === "Meriadoc Brandybuck"){
+		 	guess=prompt('He\'s too Merry to be a fat hobbit. Guess again!');
+		 	}
+		 else if (guess === "Bilbo Baggins"){
+		 	guess=prompt('You\'re not even trying, he is as shriveled as a prune. Guess again!');
+		 	}
+		 else {guess = prompt("try entering in a name of a hobbit");
+		}
 		 
 	}
 
