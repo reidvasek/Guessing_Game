@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+<head>
+	<title> Guessing Game</title>
+</head>
+<h1> Welcome to Reid's Guessing game</h1>
+
+<script>
+(function() {
+
+	var answer="93";
+
+	var guess= prompt("How many games will the Mariners win this year")
+	guess= Number.parseInt(guess);
+
+	while (true) {
+		 if (guess==answer){
+		 	alert('You got it!!!! U= jean yus!');
+		 	break;
+		 } else if (guess > answer){
+		 	guess = Number.parseInt (prompt('Too high, guess again'));
+		 }	else if (guess < answer){
+		 	guess = Number.parseInt	(prompt('Too low, guess again'));
+		 	}
+
+		 
+	}
+
+})();
+
+</script>
+
+</html>
