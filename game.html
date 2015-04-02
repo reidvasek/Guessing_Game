@@ -1,4 +1,3 @@
-
 <script>
 (function() {
 function Hobbit (name, strong, sly, pipe) {
@@ -8,7 +7,6 @@ function Hobbit (name, strong, sly, pipe) {
 	this.pipe = pipe;
 		
 
-
 	
 	this.fight = function()
 		{
@@ -17,9 +15,9 @@ function Hobbit (name, strong, sly, pipe) {
 		if (userFightMethod == 'fight') {
 			
 				if (this.strong > 0) 
-				{alert(this.name + "! Wins!" this.name" is so strong that the troll didn't stand a chance. Try again and see if you can beat the troll with another character")} 
+				{alert(this.name + "! Wins, you have beaten the troll. Try again and see if you can beat the troll with another character")} 
 			else {
-				alert('Im sorry ' + this.name + " is not strong enough to beat the troll. It was not even close. Try again and see if you can win with another character")
+				alert('Im sorry ' + this.name + " is not strong enough to beat the troll. Try again and see if you can win with another character")
 				 }
 			}
 
@@ -32,60 +30,15 @@ function Hobbit (name, strong, sly, pipe) {
 			}
 		else if (userFightMethod == 'pipe')
 			{ if (this.pipe > 0)
-				{alert(this.name + " decides to sit around on his lazy butt and starts to smoke some fine Brandybuck tobacco. The troll assumes that it is a peace pipe and is lulled into a sense of tranquility. The troll then takes a lengthy nap and forgets all about eating small hobbits. " +this.name + " is a hero! Try again and see if you can beat the troll with another character")}
+				{alert(this.name + " decides to sit around on his lazy butt and starts to smoke some fine Brandybuck tobacco. Over time the smoke from the pipe incapacitates the troll and kills it. " +this.name + " is a hero! Try again and see if you can beat the troll with another character")}
 			  else { 
-			     alert(this.name + " does not even own a pipe. Thus making it very tough to smoke anything. The troll runs rampant through the village eating all the small hobbits while " + this.name + " sits on his lazy butt . Try again and see if you can win with another character")
+			     alert(this.name + " does not even own a pipe. Thus making it very tough to smoke anything. The troll runs rampant through the village eating all the small hobbits while " + this.name + " sits on his lazy butt pretending to smoke air. Try again and see if you can win with another character")
 			 	   };
 			}
 
 		else {userFightMethod = alert("Try typing in a fight method next time. Try again" );
 		}
 	}
-
-	var answer = "SAMWISE GAMGEE";
-	var points = 100;
-
-	var guess = prompt("You have 100 points!! Each guess costs 25 points. Choose wisely. Who is the fattest of the hobbitses.")
-	guess = guess.toUpperCase();
-	points = points - 25;
-
-
-
-	while (points > 0) {
-		 if (guess === answer || guess === "SAM"){
-		 	alert('You\'ve done well You win ' + points + " points!!!!!! If this isn\'t enough hobbitses for you, check out the hidden video");
-		 	break;
-		 }
-		 else if (guess === "PEREGRIN TOOK" || "PIPPIN" ){
-		 	guess = prompt('Pippin needs to smoke less pipe tobacco and eat more lambas bread. Guess again! You have ' + points + ' points left.');
-		 	guess = guess.toUpperCase();
-		 	points = points - 25;
-		 }
-		 else if (guess === "FRODO BAGGINS" || "FRODO"){
-		 	guess = prompt('The precious, the precious! Guess again! You have ' + points + ' points left.');
-		 	guess= guess.toUpperCase();
-		 	points = points - 25;
-		 	}
-
-		else if (guess === "MERIADOC BRANDYBUCK" || "MERRY"){
-		 	guess = prompt('He\'s too Merry to be a fat hobbit. Guess again! You have ' + points + ' points left.');
-		 	guess = guess.toUpperCase()
-		 	points = points - 25;
-		 	}
-		 else if (guess === "BILBO BAGGINS" || BILBO){
-		 	guess = prompt('You\'re not even trying, he is as shriveled as a prune. Guess again! You have ' + points + ' points left.');
-		 	guess = guess.toUpperCase();
-		 	points = points -25;
-		 	}
-		 else {guess = prompt("try entering in a name of a hobbit");
-		 guess = guess.toUpperCase();
-		}
-
-	}
-
-	if (points === 0){
-		prompt('Loser! The hidden pop up will help you should you dare to try this game again');
-
 	}
 
 	var sam = new Hobbit ('Sam', 1, 0, 0);
@@ -111,7 +64,6 @@ function Hobbit (name, strong, sly, pipe) {
 		merry.fight();
 	}
 
-<<<<<<< HEAD
 	else if (userInput === "PIPPIN") {
 		var pippinfight = 
 		pippin.fight();
@@ -121,8 +73,4 @@ function Hobbit (name, strong, sly, pipe) {
 
 })();
 
-
-
 </script>
-
-
