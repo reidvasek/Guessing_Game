@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+=======
+<!Doctype html>
+<html>
+<head>
+	<title> Guessing Game</title>
+</head>
+<body>
+<h2> You've chosen to play</h2>
+<h1> Name that Hobbit! <h1>
+<h3> In the ensuing prompt, enter the full name of the hobbit who best fits the question</h3>
+<ul>
+<li>Peregrin Took</li>
+<li>Bilbo Baggins</li>
+<li>Meriadoc Brandybuck</li>
+<li>Samwise Gamgee</li>
+<li>Frodo Baggins</li>
+</ul>
+<div>
+	<iframe width="420" height="315" src="https://www.youtube.com/embed/z9Uz1icjwrM" frameborder="0" allowfullscreen></iframe>
+	</div>
+>>>>>>> b4de9f49ba2d26dcba9f6fe293868dd481ad6c9d
 <script>
 (function() {
 function Hobbit (name, strong, sly, pipe) {
@@ -7,6 +29,7 @@ function Hobbit (name, strong, sly, pipe) {
 	this.pipe = pipe;
 		
 
+<<<<<<< HEAD
 	
 	this.fight = function()
 		{
@@ -39,6 +62,51 @@ function Hobbit (name, strong, sly, pipe) {
 		else {userFightMethod = alert("Try typing in a fight method next time. Try again" );
 		}
 	}
+=======
+	var answer = "SAMWISE GAMGEE";
+	var points = 100;
+
+	var guess = prompt("You have 100 points!! Each guess costs 25 points. Choose wisely. Who is the fattest of the hobbitses.")
+	guess = guess.toUpperCase();
+	points = points - 25;
+
+
+
+	while (points > 0) {
+		 if (guess === answer || guess === "SAM"){
+		 	alert('You\'ve done well You win ' + points + " points!!!!!! If this isn\'t enough hobbitses for you, check out the hidden video");
+		 	break;
+		 }
+		 else if (guess === "PEREGRIN TOOK" || "PIPPIN" ){
+		 	guess = prompt('Pippin needs to smoke less pipe tobacco and eat more lambas bread. Guess again! You have ' + points + ' points left.');
+		 	guess = guess.toUpperCase();
+		 	points = points - 25;
+		 }
+		 else if (guess === "FRODO BAGGINS" || "FRODO"){
+		 	guess = prompt('The precious, the precious! Guess again! You have ' + points + ' points left.');
+		 	guess= guess.toUpperCase();
+		 	points = points - 25;
+		 	}
+
+		else if (guess === "MERIADOC BRANDYBUCK" || "MERRY"){
+		 	guess = prompt('He\'s too Merry to be a fat hobbit. Guess again! You have ' + points + ' points left.');
+		 	guess = guess.toUpperCase()
+		 	points = points - 25;
+		 	}
+		 else if (guess === "BILBO BAGGINS" || BILBO){
+		 	guess = prompt('You\'re not even trying, he is as shriveled as a prune. Guess again! You have ' + points + ' points left.');
+		 	guess = guess.toUpperCase();
+		 	points = points -25;
+		 	}
+		 else {guess = prompt("try entering in a name of a hobbit");
+		 guess = guess.toUpperCase();
+		}
+
+	}
+
+	if (points === 0){
+		prompt('Loser! The hidden pop up will help you should you dare to try this game again');
+>>>>>>> b4de9f49ba2d26dcba9f6fe293868dd481ad6c9d
 	}
 
 	var sam = new Hobbit ('Sam', 1, 0, 0);
@@ -64,6 +132,7 @@ function Hobbit (name, strong, sly, pipe) {
 		merry.fight();
 	}
 
+<<<<<<< HEAD
 	else if (userInput === "PIPPIN") {
 		var pippinfight = 
 		pippin.fight();
@@ -74,3 +143,8 @@ function Hobbit (name, strong, sly, pipe) {
 })();
 
 </script>
+=======
+</script>
+</body>
+</html>
+>>>>>>> b4de9f49ba2d26dcba9f6fe293868dd481ad6c9d
