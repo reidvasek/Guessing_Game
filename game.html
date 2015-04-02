@@ -13,9 +13,13 @@ function Hobbit (name, strong, sly, pipe) {
 		var userFightMethod = prompt('Ahhhh so you have picked ' + this.name + ' What are you going to do, go up and fight, sneak up on it, or sit and smoke your pipe?', 'type in fight, sneak, or pipe' .toLowerCase())
 
 		if (userFightMethod == 'fight') {
+			var wannaShake = prompt ('On your way to fight the troll ' +this.name+ ' stubs his toe on a protein shake. Will ' + this.name + " drink the shake?", "Type YES or NO").toUpperCase()
+
+			if (wannaShake === "YES") {this.strong +=1;}
+			else {this.strong+=0;}
 			
 				if (this.strong > 0) 
-				{alert(this.name + "! Wins, you have beaten the troll. Try again and see if you can beat the troll with another character")} 
+				{alert(this.name + " Uses his burst of strength to give the troll one might punch! " + this.name+ "has beaten the troll. Try again and see if you can beat the troll with another character")} 
 			else {
 				alert('Im sorry ' + this.name + " is not strong enough to beat the troll. Try again and see if you can win with another character")
 				 }
