@@ -1,45 +1,76 @@
-<!Doctype html>
-<html>
-<head>
-	<title> Guessing Game</title>
-</head>
-<h2> You've chosen to play</h2>
-<h1> Name that Hobbit! <h1>
-<h3> In the ensuing prompt, enter the full name of the hobbit who best fits the question</h3>
-
 <script>
 (function() {
+function Hobbit (name, strong, sly, pipe) {
+	this.name = name;
+	this.strong = strong;
+	this.sly = sly;
+	this.pipe = pipe;
+		
 
-	var answer = "Samwise Gamgee";
-
-	var guess = prompt("Who is the fattest of the hobbitses")
 	
+	this.fight = function()
+		{
+		var userFightMethod = prompt('Ahhhh so you have picked ' + this.name + ' What are you going to do, go up and fight, sneak up on it, or sit and smoke your pipe?', 'type in fight, sneak, or pipe' .toLowerCase())
 
-	while (true) {
-		 if (guess === answer){
-		 	alert('You\'ve done well');
-		 	break;
-		 } 
-		 else if (guess === "Peregrin Took" ){
-		 	guess=prompt('Pippin needs to smoke less pipe tabacco and eat more lambas bread. Guess again!');
-		 }	
-		 else if (guess === "Frodo Baggins"){
-		 	guess=prompt('The precious, the precious! Guess again!');
-		 	}
+		if (userFightMethod == 'fight') {
+			
+				if (this.strong > 0) 
+				{alert(this.name + "! Wins!" this.name" is so strong that the troll didn't stand a chance. Try again and see if you can beat the troll with another character")} 
+			else {
+				alert('Im sorry ' + this.name + " is not strong enough to beat the troll. It was not even close. Try again and see if you can win with another character")
+				 }
+			}
 
-		else if (guess === "Meriadoc Brandybuck"){
-		 	guess=prompt('He\'s too Merry to be a fat hobbit. Guess again!');
-		 	}
-		 else if (guess === "Bilbo Baggins"){
-		 	guess=prompt('You\'re not even trying, he is as shriveled as a prune. Guess again!');
-		 	}
-		 else {guess = prompt("try entering in a name of a hobbit");
+		else if (userFightMethod == 'sneak')
+			{ if (this.sly > 0)
+				{alert(this.name + " sneaks up on the troll and surprises it with a knife in the back! Try again and see if you can beat the troll with another character")}
+			  else { 
+			     alert( this.name + " bumbles around and stumbles into the troll. The troll is not amused. The troll lifts up and eats " +this.name + " . Now with an appetite, the troll goes into the shire and eats all the little hobbitses.  Try again and see if you can beat the troll with another character")
+			 	   };
+			}
+		else if (userFightMethod == 'pipe')
+			{ if (this.pipe > 0)
+				{alert(this.name + " decides to sit around on his lazy butt and starts to smoke some fine Brandybuck tobacco. The troll assumes that it is a peace pipe and is lulled into a sense of tranquility. The troll then takes a lengthy nap and forgets all about eating small hobbits. " +this.name + " is a hero! Try again and see if you can beat the troll with another character")}
+			  else { 
+			     alert(this.name + " does not even own a pipe. Thus making it very tough to smoke anything. The troll runs rampant through the village eating all the small hobbits while " + this.name + " sits on his lazy butt . Try again and see if you can win with another character")
+			 	   };
+			}
+
+		else {userFightMethod = alert("Try typing in a fight method next time. Try again" );
 		}
-		 
 	}
+	}
+
+	var sam = new Hobbit ('Sam', 1, 0, 0);
+	var frodo = new Hobbit ('Frodo', 0, 0, 0);
+	var merry = new Hobbit ('Merry', 0, 0, 1);
+	var pippin = new Hobbit ('Pippin', 0, 1, 1);
+
+	var userInput = prompt ('A troll has appeared in the Shire. If it is not defeated it will eat all the small hobbits in the village. The only hobbits who are brave enough are frodo, sam, merry, and pippin. Choose your character', 'type sam, frodo, merry, or pippin').toUpperCase();
+
+	
+	if (userInput === "SAM") {
+		var samfight = 
+		sam.fight();
+	}
+
+	else if (userInput=== "FRODO") {
+		var frodofight =
+		frodo.fight();
+	}
+
+	else if (userInput === "MERRY") {
+		var merryfight = 
+		merry.fight();
+	}
+
+	else if (userInput === "PIPPIN") {
+		var pippinfight = 
+		pippin.fight();
+	}
+	else {userInput = alert("Try typing in a character name next time. Try again" );
+		}
 
 })();
 
 </script>
-
-</html>
