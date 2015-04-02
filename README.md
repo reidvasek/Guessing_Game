@@ -1,11 +1,11 @@
 This game is rated E for everyone
 
-In "Guess that hobbit!" you will be greeted with a promp "Who is the fattest of the hobbitses"
+I rehauled my game enabling it to utilize objects.
 
-In the prompt, enter the full name of the hobbit who best fits the question.
+I regret to inform you that 
+'Guess that HObbit '
+has been replaced with "Hobbit Vs. Troll"
 
-If you do not get the correct answer, you will be prompted again until you get the correct answer.
+In this game the hobbits need to defend the shire. The user selects a hobbit to fight the troll. The hobbits all have different properties which are hidden to the user. The user has to select the hobbit and then decide on a fight method to defeat the troll. The fight method also utilizes the properties of the object. Different hobbits with their different specialties will defeat the troll if you select the correct fight method. 
 
-Potential responses include Peregrin Took, Frodo Baggins, Samwise Gamgee,Meriadoc Brandybuck and Bilbo Baggins. 
-
-Best of luck!!!!!!
+Best of Luck!
