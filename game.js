@@ -1,4 +1,4 @@
-<script>
+
 	(function() {
 		function Hobbit (name, strong, sly, pipe) {
 			this.name = name;
@@ -79,4 +79,3 @@
 
 		}
 	})();
-</script>
